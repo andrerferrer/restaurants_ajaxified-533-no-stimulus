@@ -1,14 +1,6 @@
 <h1>Restaurants</h1>
 
 <%# add the controller to the element that wraps both of them up %>
-<div class="container">
-
-  <div data-controller='counter'>
-    <h2>Number of Restaurants</h2>
-    <p data-counter-target='restaurantCount'></p>
-  </div>
-  
-</div>
 <ul>
   <% @restaurants.each do |restaurant| %>
     <li>
