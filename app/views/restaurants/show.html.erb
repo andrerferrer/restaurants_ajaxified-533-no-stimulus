@@ -12,3 +12,9 @@
     <% end %>
   <% end %>
 </div>
+
+<%# simple_form_for [@parent, @child] do |f| %>
+<%= simple_form_for [@restaurant, @review] do |f| %>
+  <%= f.input :content %>
+  <%= f.submit %>
+<% end %>
