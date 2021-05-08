@@ -1,12 +1,15 @@
 <div class="container">
 
-  <div class="flex-center mt-4">
+  <%# add the controller to the element that wraps both of them up %>
+  <div class="flex-center mt-4" data-controller='counter'>
     <div class="counter">
-      <span><%= @restaurant_count %></span>
+      <%# change this value %>
+      <%# <span data-controllerName-target='variableName' > @restaurant_count </span>  %>
+      <span data-counter-target='restaurantCount' ><%= @restaurant_count %></span> 
     </div>
 
-    <button class="btn btn-outline-secondary">Refresh counter</button>
+    <%# click on this button %>
+    <button data-action='click->counter#refresh' class="btn btn-outline-secondary">Refresh counter</button>
   </div>
-
 
 </div>
